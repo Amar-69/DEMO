@@ -1,0 +1,323 @@
+Solution of Assignment 02
+Submitted by Amarjeet Kumar
+Form No:- 210703679
+
+
+//Write a program to calculate the sum of first 10 natural number.
+package assignment;
+
+public class SumOfFirstNaturalNumber {
+
+	public static void main(String[] args) {
+		int sum =0;
+		for (int i = 0; i <10 ; i++) 
+		{
+			sum+=i;
+		}
+		System.out.println("the sum of first 10 natural number is:"+sum);
+	}
+
+}
+
+
+
+//Write a program to print the multiplication of number.
+package assignment;
+
+import java.util.Scanner;
+
+public class Table {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the Number:");
+		int x= s.nextInt();
+	    for (int i = 1; i<=10; i++) 
+	    { 
+         int n=x*i;	
+         System.out.println(""+x+"*"+i+" is "+n);
+		}
+	    s.close();
+	}
+
+}
+
+
+//Write a program to reverse the number
+package assignment;
+
+import java.util.Scanner;
+
+public class ReverseOfNumber {
+
+	public static void main(String[] args) {
+		int r=0;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number you want to reverse:");
+		int n= scan.nextInt();
+        while(n>0)
+        {
+        	int d= n%10;
+        	r=r*10+d;
+        	n=n/10;
+        }
+        System.out.println("the reverse of the number is:"+r);
+        scan.close();
+	}
+
+}
+
+
+
+/* Write a do-while loop that asks the user to enter two numbers. 
+ * The numbers should be added and the sum displayed. 
+ * The loop should ask the user whether he or she wishes to perform the 
+ * operation again. If so, the loop should repeat; otherwise it should 
+ * terminate.(while loop)
+*/
+
+package assignment;
+
+import java.util.Scanner;
+
+public class Dowhile {
+
+	public static void main(String[] args) {
+		Scanner s1 = new Scanner(System.in);
+		char ch;
+		int num, num1;
+		int y;
+		do {
+			System.out.println("Entert the first number");
+			num=s1.nextInt();
+			System.out.println("Entert the Second number");
+		    num1 =s1.nextInt();
+		    y= num+num1;
+		    System.out.println("Addition of "+num+" and "+num1+" is "+y);
+			
+		    System.out.println("Do you want to enter more(y/n)");
+			ch=s1.next().charAt(0);
+		} 
+		while(ch=='y'||ch=='Y');
+		
+     s1.close();
+	}
+
+}
+
+
+
+/*  star print 
+*
+**
+***
+****
+*****
+  
+*/
+
+package assignment;
+
+public class StarPrint {
+
+	public static void main(String[] args) {
+       for (int i = 1; i <=5; i++) 
+       {
+		 for (int j = 1; j <=i; j++) 
+		 {
+		    System.out.print("*");	
+		 }
+		System.out.println(); 
+	  }
+
+	}
+
+}
+
+
+
+/* Star Print
+*****
+****
+***
+**
+*
+
+*/
+ 
+package assignment;
+
+public class StarPrint {
+
+	public static void main(String[] args) {
+       for (int i = 1; i <=5; i++) 
+       {
+		 for (int j = 5; j>=i; j--) 
+		 {
+		    System.out.print("*");	
+		 }
+		System.out.println(); 
+	  }
+
+	}
+
+}
+
+
+/* Star Print
+    *
+   **
+  ***
+ ****
+*****
+
+*/
+
+package assignment;
+
+public class StarPrint {
+
+	public static void main(String[] args) {
+       for (int i = 1; i <=5; i++) 
+       {
+    	  for (int j =1; j<=5-i; j++) 
+    	  {
+			System.out.print(" ");
+		  } 
+		    for (int j =1; j<=i; j++) 
+		    {
+		    System.out.print("*");	
+		    }
+		System.out.println(); 
+	  }
+
+	}
+
+}
+
+
+
+/* Star Print
+    1
+   22
+  333
+ 4444
+55555
+
+*/
+
+package assignment;
+
+public class StarPrint {
+
+	public static void main(String[] args) {
+       for (int i = 1; i <=5; i++) 
+       {
+    	  for (int j =1; j<=5-i; j++) 
+    	  {
+			System.out.print(" ");
+		  } 
+		    for (int j =1; j<=i; j++) 
+		    {
+		    System.out.print(i);	
+		    }
+		System.out.println(); 
+	  }
+
+	}
+
+}
+
+
+// Print Ascii Value of all character from 0 to 256
+package assignment;
+
+public class AsciiValue {
+
+	public static void main(String[] args) {
+		for (int i = 0; i <256; i++) 
+		{
+		System.out.println("The Ascii value "+(char)i+" is "+i);	
+		}
+	}
+
+}
+
+
+//WAP to print the Fabonacci series.
+package assignment;
+
+import java.util.Scanner;
+
+public class Fab {
+
+	public static void main(String[] args) {
+		int n1=0,n2=1,n3;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Entert the number:");
+		int n = scan.nextInt();
+		
+		System.out.println(""+n1+"\n"+n2);
+		for (int i = 0; i <n; i++) 
+		{
+		 n3=n1+n2;
+		 System.out.println(""+n3);
+		 n1=n2;
+		 n2=n3;
+		}
+	scan.close();	
+
+	}
+
+}
+
+
+
+// WAP to find the sum of the given number.
+package assignment;
+
+import java.util.Scanner;
+
+public class SumOfDigit {
+
+	public static void main(String[] args) {
+		int sum =0;
+		Scanner s2 = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int y = s2.nextInt();
+	    	
+		while(y>0)
+		{
+			int d= y%10;
+			sum+=d;
+			y=y/10;
+		}
+		System.out.println("The sum of the digit is:"+sum);
+		s2.close();
+	}
+
+}
+
+
+// Armstrong number between 1 to 500
+package assignment;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int sum;
+		for (int i = 1; i <500; i++) 
+		{       sum=0;
+			int n=i;
+			while(n!=0) 
+			{
+			   int rem= n%10;
+			   sum = sum + (rem*rem*rem);
+			   n=n/10;
+			}
+			if(sum==i) System.out.print(i);
+		}
+		
+
+	}
+
